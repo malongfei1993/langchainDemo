@@ -15,9 +15,9 @@ def index():
     return render_template('index.html')  
 def switch_case(argument):
     result = ''
-    param0 = "内容提取："
-    param1 = "检讨："
-    param2 = "计算器："
+    param0 = "智能识别："
+    param1 = "精准评估："
+    param2 = "计算："
     param3 = "报告："
     
     if param0 in argument:
@@ -41,7 +41,7 @@ def switch_case(argument):
         result = argument.replace(param2,"")     
         response = calculateApi(result)
         #加个单位
-        session["REVIEW_PARAMETER"] = response+"nit"
+        session["REVIEW_PARAMETER"] = response.get("result")+"nit"
         judgeMent = getReviewResult()
         response["result"] = response.get("result")+judgeMent
         return response
