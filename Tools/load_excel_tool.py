@@ -12,7 +12,7 @@ def getRFQ_Key_Data(test:str) -> str:
 @tool("获取RFQ的Excel数据", return_direct=False)
 def getRFQ_Excel_Data(test:str) -> str:
     """getRFQ_Excel_Data(filePath: str,sheetName:str) -> str"""
-    file_path = 'Files/【更新】Display_RFI_CS25_TBG_13inch_08132023.xlsx'  # 替换为你的 Excel 文件路径
+    file_path = 'Files/Test.xlsx'  # 替换为你的 Excel 文件路径
     sheet_name = '13-1'  # 替换为你要读取的 sheet 名称
     print("filePath is :{}".format(file_path))
     print("sheetName is :{}".format(sheet_name))
@@ -33,7 +33,7 @@ def getExcelNameAndSheetName(test:str) -> dict:
     """
     
     
-    file_path = 'Files/【更新】Display_RFI_CS25_TBG_13inch_08132023.xlsx'  # 替换为你的 Excel 文件路径
+    file_path = 'Files/Test.xlsx'  # 替换为你的 Excel 文件路径
     sheet_name = '13-1'  # 替换为你要读取的 sheet 名称
     return {"filePath":file_path,"sheetName":sheet_name}
 

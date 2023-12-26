@@ -16,7 +16,7 @@ def read_excel_sheet(sheet_name, file_path):
     return result_str
 
 # 调用示例
-file_path = 'Files/【更新】Display_RFI_CS25_TBG_13inch_08132023.xlsx'  # 替换为你的 Excel 文件路径
+file_path = 'Files/Test.xlsx'  # 替换为你的 Excel 文件路径
 sheet_name = '13-1'  # 替换为你要读取的 sheet 名称
 
 # output = read_excel_sheet(sheet_name, file_path)

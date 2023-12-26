@@ -19,7 +19,7 @@ def read_excel_sheet(sheet_name, file_path):
 def testA():
     if not hasattr(testA, 'output_iterator'):
         current_dir = os.path.dirname(__file__)
-        file_path =  os.path.join(current_dir, '../Files/【更新】Display_RFI_CS25_TBG_13inch_08132023.xlsx')  # 替换为你的 Excel 文件路径
+        file_path =  os.path.join(current_dir, '../Files/Test.xlsx')  # 替换为你的 Excel 文件路径
         sheet_name = '13-1'  # 替换为你要读取的 sheet 名称
 
         testA.output_iterator = read_excel_sheet(sheet_name, file_path)
